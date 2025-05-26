@@ -3,24 +3,24 @@
     {
       "name": "Old Laptop",
       "price": 120,
-      "image": "1.jpg"
+      "image": "https://tallevi1000.github.io/GarageSale/images/1.jpg"
     },
     {
       "name": "Bluetooth Speaker",
       "price": 25,
-      "image": "1.jpg"
+      "image": "https://tallevi1000.github.io/GarageSale/images/1.jpg"
     }
   ],
   "Furniture": [
     {
       "name": "Wooden Chair",
       "price": 15,
-      "image": "1.jpg"
+      "image": "https://tallevi1000.github.io/GarageSale/images/1.jpg"
     },
     {
       "name": "Small Table",
       "price": 30,
-      "image": "1.jpg"
+      "image": "https://tallevi1000.github.io/GarageSale/images/1.jpg"
     }
   ]
 }

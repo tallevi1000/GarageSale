@@ -21,7 +21,7 @@ fetch('data/items.json')
         itemDiv.innerHTML = `
           <img src="images/${item.image}" alt="${item.name}" />
           <h3>${item.name}</h3>
-          <p><strong>Price:</strong> $${item.price}</p>
+          <p><strong>Price:</strong> ₪${item.price}</p>
         `;
         itemsDiv.appendChild(itemDiv);
       });

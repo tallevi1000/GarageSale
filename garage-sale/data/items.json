@@ -3,24 +3,24 @@
     {
       "name": "Old Laptop",
       "price": 120,
-      "image": "laptop.jpg"
+      "image": "1.jpg"
     },
     {
       "name": "Bluetooth Speaker",
       "price": 25,
-      "image": "speaker.jpg"
+      "image": "1.jpg"
     }
   ],
   "Furniture": [
     {
       "name": "Wooden Chair",
       "price": 15,
-      "image": "chair.jpg"
+      "image": "1.jpg"
     },
     {
       "name": "Small Table",
       "price": 30,
-      "image": "table.jpg"
+      "image": "1.jpg"
     }
   ]
 }

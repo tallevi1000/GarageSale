@@ -1,0 +1,26 @@
+{
+  "Electronics": [
+    {
+      "name": "Old Laptop",
+      "price": 120,
+      "image": "laptop.jpg"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "price": 25,
+      "image": "speaker.jpg"
+    }
+  ],
+  "Furniture": [
+    {
+      "name": "Wooden Chair",
+      "price": 15,
+      "image": "chair.jpg"
+    },
+    {
+      "name": "Small Table",
+      "price": 30,
+      "image": "table.jpg"
+    }
+  ]
+}

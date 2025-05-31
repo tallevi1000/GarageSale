@@ -86,8 +86,8 @@ main {
 }
 
 .item-image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   cursor: pointer;
   border-radius: 4px;

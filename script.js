@@ -1,10 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("data/items.json")
-    .then((response) => response.json())
-    .then((data) => displayCatalog(data))
-    .catch((error) => console.error("Error loading items:", error));
-});
-
 function displayCatalog(data) {
   const container = document.getElementById("catalog");
   container.innerHTML = "";
@@ -13,10 +6,16 @@ function displayCatalog(data) {
     const categorySection = document.createElement("section");
     categorySection.className = "category";
 
+    // Category Title (clickable)
     const title = document.createElement("h2");
+    title.className = "category-title";
     title.textContent = category;
+    title.addEventListener("click", () => {
+      itemGrid.classList.toggle("collapsed");
+    });
     categorySection.appendChild(title);
 
+    // Item Grid (initially visible)
     const itemGrid = document.createElement("div");
     itemGrid.className = "item-grid";
 

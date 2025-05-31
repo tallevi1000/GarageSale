@@ -5,11 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => console.error("Error loading items:", error));
 });
 
-function displayCatalog(data, container = document.getElementById("catalog")) {
-  Object.entries(data).forEach(([categoryName, categoryValue]) => {
+function displayCatalog(data) {
+  const container = document.getElementById("catalog");
+  container.innerHTML = "";
+
+  Object.entries(data).forEach(([category, items]) => {
     const categorySection = document.createElement("section");
     categorySection.className = "category";
 
+    // Category title
     const title = document.createElement("h2");
     title.className = "category-title";
 
@@ -17,48 +21,51 @@ function displayCatalog(data, container = document.getElementById("catalog")) {
     arrow.className = "arrow";
     arrow.textContent = "►";
 
-    const totalCount = countItems(categoryValue);
-
     const titleText = document.createElement("span");
     titleText.className = "title-text";
-    titleText.textContent = ` ${categoryName} (${totalCount})`;
+    titleText.textContent = ` ${category} (${items.length})`;
 
     title.appendChild(arrow);
     title.appendChild(titleText);
     categorySection.appendChild(title);
 
-    const contentDiv = document.createElement("div");
-    contentDiv.className = "category-content collapsed";
+    // Item grid
+    const itemGrid = document.createElement("div");
+    itemGrid.className = "item-grid collapsed";
+    // itemGrid.className = "item-grid";
 
-    if (Array.isArray(categoryValue)) {
-      const itemGrid = createItemGrid(categoryValue);
-      contentDiv.appendChild(itemGrid);
-    } else {
-      displayCatalog(categoryValue, contentDiv); // Recursively render subcategories
-    }
+    items.forEach((item) => {
+      const itemDiv = document.createElement("div");
+      itemDiv.className = "item";
 
-    title.addEventListener("click", () => {
-      contentDiv.classList.toggle("collapsed");
-      arrow.textContent = contentDiv.classList.contains("collapsed") ? "►" : "▼";
+      const img = document.createElement("img");
+      img.src = `images/${item.image}`;
+      img.alt = item.name;
+      img.className = "item-image";
+      img.addEventListener("click", () => createImageModal(`images/${item.image}`));
+
+      const name = document.createElement("h3");
+      name.textContent = item.name;
+
+      const price = document.createElement("p");
+      price.innerHTML = `<strong>Price:</strong> ₪${item.price}`;
+
+      itemDiv.appendChild(img);
+      itemDiv.appendChild(name);
+      itemDiv.appendChild(price);
+      itemGrid.appendChild(itemDiv);
     });
 
-    categorySection.appendChild(contentDiv);
+    categorySection.appendChild(itemGrid);
     container.appendChild(categorySection);
+
+    // Collapse/expand toggle
+    title.addEventListener("click", () => {
+      itemGrid.classList.toggle("collapsed");
+      arrow.textContent = itemGrid.classList.contains("collapsed") ? "►" : "▼";
+    });
   });
 }
-
-// 🔁 Recursively count items in a category or subcategory
-function countItems(categoryValue) {
-  if (Array.isArray(categoryValue)) {
-    return categoryValue.length;
-  }
-  let total = 0;
-  for (const sub of Object.values(categoryValue)) {
-    total += countItems(sub);
-  }
-  return total;
-}
-
 
 function createImageModal(imageSrc) {
   const overlay = document.createElement("div");

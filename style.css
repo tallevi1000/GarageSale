@@ -70,8 +70,8 @@ main {
 }
 
 .item-image {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   cursor: pointer;
   border-radius: 4px;

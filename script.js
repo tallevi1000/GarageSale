@@ -19,7 +19,7 @@ function displayCatalog(data) {
 
     const arrow = document.createElement("span");
     arrow.className = "arrow";
-    arrow.textContent = "▼";
+    arrow.textContent = "►";
 
     const titleText = document.createElement("span");
     titleText.className = "title-text";
@@ -31,6 +31,7 @@ function displayCatalog(data) {
 
     // Item grid
     const itemGrid = document.createElement("div");
+    itemGrid.className = "item-grid collapsed";
     itemGrid.className = "item-grid";
 
     items.forEach((item) => {

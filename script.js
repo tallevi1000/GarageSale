@@ -10,9 +10,11 @@ function displayCatalog(data, container = document.getElementById("catalog")) {
     arrow.className = "arrow";
     arrow.textContent = "►";
 
+    const totalCount = countItems(categoryValue);
+
     const titleText = document.createElement("span");
     titleText.className = "title-text";
-    titleText.textContent = ` ${categoryName}`;
+    titleText.textContent = ` ${categoryName} (${totalCount})`;
 
     title.appendChild(arrow);
     title.appendChild(titleText);
@@ -25,7 +27,7 @@ function displayCatalog(data, container = document.getElementById("catalog")) {
       const itemGrid = createItemGrid(categoryValue);
       contentDiv.appendChild(itemGrid);
     } else {
-      displayCatalog(categoryValue, contentDiv); // Recursive for subcategories
+      displayCatalog(categoryValue, contentDiv); // Recursively render subcategories
     }
 
     title.addEventListener("click", () => {
@@ -38,31 +40,14 @@ function displayCatalog(data, container = document.getElementById("catalog")) {
   });
 }
 
-function createItemGrid(items) {
-  const itemGrid = document.createElement("div");
-  itemGrid.className = "item-grid";
-
-  items.forEach((item) => {
-    const itemDiv = document.createElement("div");
-    itemDiv.className = "item";
-
-    const img = document.createElement("img");
-    img.src = `images/${item.image}`;
-    img.alt = item.name;
-    img.className = "item-image";
-    img.addEventListener("click", () => createImageModal(`images/${item.image}`));
-
-    const name = document.createElement("h3");
-    name.textContent = item.name;
-
-    const price = document.createElement("p");
-    price.innerHTML = `<strong>Price:</strong> ₪${item.price}`;
-
-    itemDiv.appendChild(img);
-    itemDiv.appendChild(name);
-    itemDiv.appendChild(price);
-    itemGrid.appendChild(itemDiv);
-  });
-
-  return itemGrid;
+// 🔁 Recursively count items in a category or subcategory
+function countItems(categoryValue) {
+  if (Array.isArray(categoryValue)) {
+    return categoryValue.length;
+  }
+  let total = 0;
+  for (const sub of Object.values(categoryValue)) {
+    total += countItems(sub);
+  }
+  return total;
 }

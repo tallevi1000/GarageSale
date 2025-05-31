@@ -1,13 +1,18 @@
 {
-  "Home": [
+  "Kitchen": [
     {
       "name": "Oven",
       "price": 120,
       "image": "1.jpg"
     },
     {
-      "name": "Bluetooth Speaker",
-      "price": 25,
+      "name": "Fridge",
+      "price": 250,
+      "image": "1.jpg"
+    },
+    {
+      "name": "Stove",
+      "price": 50,
       "image": "1.jpg"
     }
   ],
@@ -20,6 +25,21 @@
     {
       "name": "Bluetooth Speaker",
       "price": 25,
+      "image": "1.jpg"
+    },
+    {
+      "name": "TV",
+      "price": 400,
+      "image": "1.jpg"
+    },
+    {
+      "name": "Streamer",
+      "price": 300,
+      "image": "1.jpg"
+    },
+    {
+      "name": "27 inch Monitor",
+      "price": 350,
       "image": "1.jpg"
     }
   ],

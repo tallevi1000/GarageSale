@@ -49,6 +49,14 @@ main {
   margin-right: 8px;
 }
 
+.category-content {
+  margin-left: 1em;
+}
+
+.category-content.collapsed {
+  display: none;
+}
+
 .item-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

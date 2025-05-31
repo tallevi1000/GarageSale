@@ -1,4 +1,16 @@
 {
+  "Home": [
+    {
+      "name": "Oven",
+      "price": 120,
+      "image": "1.jpg"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "price": 25,
+      "image": "1.jpg"
+    }
+  ],
   "Electronics": [
     {
       "name": "Old Laptop",

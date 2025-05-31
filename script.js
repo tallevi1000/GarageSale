@@ -13,16 +13,12 @@ function displayCatalog(data) {
     const categorySection = document.createElement("section");
     categorySection.className = "category";
 
-    // Category Title (clickable)
+    // Create category title
     const title = document.createElement("h2");
     title.className = "category-title";
     title.textContent = category;
-    title.addEventListener("click", () => {
-      itemGrid.classList.toggle("collapsed");
-    });
-    categorySection.appendChild(title);
 
-    // Item Grid (initially visible)
+    // Create item grid
     const itemGrid = document.createElement("div");
     itemGrid.className = "item-grid";
 
@@ -30,14 +26,21 @@ function displayCatalog(data) {
       const itemDiv = document.createElement("div");
       itemDiv.className = "item";
       itemDiv.innerHTML = `
-        <img src="images/${item.image}" alt="${item.name}" />
+        <img src="${item.image}" alt="${item.name}" />
         <h3>${item.name}</h3>
         <p><strong>Price:</strong> ₪${item.price}</p>
       `;
       itemGrid.appendChild(itemDiv);
     });
 
+    // Append title and item grid to category section
+    categorySection.appendChild(title);
     categorySection.appendChild(itemGrid);
     container.appendChild(categorySection);
+
+    // Add click event listener to toggle visibility
+    title.addEventListener("click", () => {
+      itemGrid.classList.toggle("collapsed");
+    });
   });
 }

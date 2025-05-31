@@ -4,14 +4,14 @@
       {
         "name": "T-shirt",
         "price": 25,
-        "image": "tshirt.jpg"
+        "image": "1.jpg"
       }
     ],
     "Women's": [
       {
         "name": "Dress",
         "price": 40,
-        "image": "dress.jpg"
+        "image": "1.jpg"
       }
     ]
   },

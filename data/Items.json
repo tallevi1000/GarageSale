@@ -39,14 +39,14 @@
                         }
                     ],
     "Clothes":  {
-                    "Women\u0027s":  [
+                    "Women":  [
                                          {
                                              "name":  "Dress",
                                              "price":  40,
                                              "image":  "1.jpg"
                                          }
                                      ],
-                    "Men\u0027s":  {
+                    "Men":  {
                                        "Shirts":  [
                                                       {
                                                           "name":  "T-shirt",

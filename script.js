@@ -26,7 +26,7 @@ function displayCatalog(data) {
       const itemDiv = document.createElement("div");
       itemDiv.className = "item";
       itemDiv.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" />
+        <img src="images/${item.image}" alt="${item.name}" />
         <h3>${item.name}</h3>
         <p><strong>Price:</strong> ₪${item.price}</p>
       `;

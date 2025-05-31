@@ -1,4 +1,20 @@
 {
+  "Clothes": {
+    "Men's": [
+      {
+        "name": "T-shirt",
+        "price": 25,
+        "image": "tshirt.jpg"
+      }
+    ],
+    "Women's": [
+      {
+        "name": "Dress",
+        "price": 40,
+        "image": "dress.jpg"
+      }
+    ]
+  },
   "Kitchen": [
     {
       "name": "Oven",

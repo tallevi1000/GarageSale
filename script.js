@@ -1,19 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("data/items.json")
-    .then((response) => response.json())
-    .then((data) => displayCatalog(data))
-    .catch((error) => console.error("Error loading items:", error));
-});
-
-function displayCatalog(data) {
-  const container = document.getElementById("catalog");
-  container.innerHTML = "";
-
-  Object.entries(data).forEach(([category, items]) => {
+function displayCatalog(data, container = document.getElementById("catalog")) {
+  Object.entries(data).forEach(([categoryName, categoryValue]) => {
     const categorySection = document.createElement("section");
     categorySection.className = "category";
 
-    // Category title
     const title = document.createElement("h2");
     title.className = "category-title";
 
@@ -23,76 +12,57 @@ function displayCatalog(data) {
 
     const titleText = document.createElement("span");
     titleText.className = "title-text";
-    titleText.textContent = ` ${category} (${items.length})`;
+    titleText.textContent = ` ${categoryName}`;
 
     title.appendChild(arrow);
     title.appendChild(titleText);
     categorySection.appendChild(title);
 
-    // Item grid
-    const itemGrid = document.createElement("div");
-    itemGrid.className = "item-grid collapsed";
-    // itemGrid.className = "item-grid";
+    const contentDiv = document.createElement("div");
+    contentDiv.className = "category-content collapsed";
 
-    items.forEach((item) => {
-      const itemDiv = document.createElement("div");
-      itemDiv.className = "item";
+    if (Array.isArray(categoryValue)) {
+      const itemGrid = createItemGrid(categoryValue);
+      contentDiv.appendChild(itemGrid);
+    } else {
+      displayCatalog(categoryValue, contentDiv); // Recursive for subcategories
+    }
 
-      const img = document.createElement("img");
-      img.src = `images/${item.image}`;
-      img.alt = item.name;
-      img.className = "item-image";
-      img.addEventListener("click", () => createImageModal(`images/${item.image}`));
-
-      const name = document.createElement("h3");
-      name.textContent = item.name;
-
-      const price = document.createElement("p");
-      price.innerHTML = `<strong>Price:</strong> ₪${item.price}`;
-
-      itemDiv.appendChild(img);
-      itemDiv.appendChild(name);
-      itemDiv.appendChild(price);
-      itemGrid.appendChild(itemDiv);
-    });
-
-    categorySection.appendChild(itemGrid);
-    container.appendChild(categorySection);
-
-    // Collapse/expand toggle
     title.addEventListener("click", () => {
-      itemGrid.classList.toggle("collapsed");
-      arrow.textContent = itemGrid.classList.contains("collapsed") ? "►" : "▼";
+      contentDiv.classList.toggle("collapsed");
+      arrow.textContent = contentDiv.classList.contains("collapsed") ? "►" : "▼";
     });
+
+    categorySection.appendChild(contentDiv);
+    container.appendChild(categorySection);
   });
 }
 
-function createImageModal(imageSrc) {
-  const overlay = document.createElement("div");
-  overlay.className = "image-overlay";
+function createItemGrid(items) {
+  const itemGrid = document.createElement("div");
+  itemGrid.className = "item-grid";
 
-  const img = document.createElement("img");
-  img.src = imageSrc;
-  img.className = "overlay-image";
+  items.forEach((item) => {
+    const itemDiv = document.createElement("div");
+    itemDiv.className = "item";
 
-  const closeBtn = document.createElement("span");
-  closeBtn.className = "close-btn";
-  closeBtn.textContent = "✕";
+    const img = document.createElement("img");
+    img.src = `images/${item.image}`;
+    img.alt = item.name;
+    img.className = "item-image";
+    img.addEventListener("click", () => createImageModal(`images/${item.image}`));
 
-  closeBtn.addEventListener("click", () => {
-    document.body.removeChild(overlay);
-    document.body.classList.remove("no-scroll");
+    const name = document.createElement("h3");
+    name.textContent = item.name;
+
+    const price = document.createElement("p");
+    price.innerHTML = `<strong>Price:</strong> ₪${item.price}`;
+
+    itemDiv.appendChild(img);
+    itemDiv.appendChild(name);
+    itemDiv.appendChild(price);
+    itemGrid.appendChild(itemDiv);
   });
 
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) {
-      document.body.removeChild(overlay);
-      document.body.classList.remove("no-scroll");
-    }
-  });
-
-  overlay.appendChild(closeBtn);
-  overlay.appendChild(img);
-  document.body.appendChild(overlay);
-  document.body.classList.add("no-scroll");
+  return itemGrid;
 }

@@ -58,3 +58,34 @@ function countItems(categoryValue) {
   }
   return total;
 }
+
+
+function createImageModal(imageSrc) {
+  const overlay = document.createElement("div");
+  overlay.className = "image-overlay";
+
+  const img = document.createElement("img");
+  img.src = imageSrc;
+  img.className = "overlay-image";
+
+  const closeBtn = document.createElement("span");
+  closeBtn.className = "close-btn";
+  closeBtn.textContent = "✕";
+
+  closeBtn.addEventListener("click", () => {
+    document.body.removeChild(overlay);
+    document.body.classList.remove("no-scroll");
+  });
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      document.body.removeChild(overlay);
+      document.body.classList.remove("no-scroll");
+    }
+  });
+
+  overlay.appendChild(closeBtn);
+  overlay.appendChild(img);
+  document.body.appendChild(overlay);
+  document.body.classList.add("no-scroll");
+}

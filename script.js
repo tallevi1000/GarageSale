@@ -32,7 +32,7 @@ function displayCatalog(data) {
     // Item grid
     const itemGrid = document.createElement("div");
     itemGrid.className = "item-grid collapsed";
-    itemGrid.className = "item-grid";
+    // itemGrid.className = "item-grid";
 
     items.forEach((item) => {
       const itemDiv = document.createElement("div");

@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function displayCatalog(data, container = document.getElementById("catalog")) {
-  Object.entries(data).forEach(([categoryName, categoryValue]) => {
+  const sortedEntries = Object.entries(data).sort((a, b) =>
+    a[0].localeCompare(b[0], undefined, { sensitivity: "base" })
+  );
+
+  sortedEntries.forEach(([categoryName, categoryValue]) => {
     const categorySection = document.createElement("section");
     categorySection.className = "category";
 
@@ -34,7 +38,7 @@ function displayCatalog(data, container = document.getElementById("catalog")) {
       const itemGrid = createItemGrid(categoryValue);
       contentDiv.appendChild(itemGrid);
     } else {
-      displayCatalog(categoryValue, contentDiv); // Recursively render subcategories
+      displayCatalog(categoryValue, contentDiv); // Recursively render sorted subcategories
     }
 
     title.addEventListener("click", () => {
@@ -87,7 +91,6 @@ function createItemGrid(items) {
 
   return itemGrid;
 }
-
 
 function createImageModal(imageSrc) {
   const overlay = document.createElement("div");

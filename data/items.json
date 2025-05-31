@@ -1,19 +1,23 @@
 {
   "Clothes": {
-    "Men's": [
-      {
-        "name": "T-shirt",
-        "price": 25,
-        "image": "1.jpg"
-      }
-    ],
-    "Women's": [
-      {
-        "name": "Dress",
-        "price": 40,
-        "image": "1.jpg"
-      }
-    ]
+    "Men's": {
+      "Shirts": [
+        {
+          "name": "T-shirt",
+          "price": 25,
+          "image": "tshirt.jpg"
+        }
+      ]
+    },
+    "Women's": {
+      "Dresses": [
+        {
+          "name": "Dress",
+          "price": 40,
+          "image": "dress.jpg"
+        }
+      ]
+    }
   },
   "Kitchen": [
     {

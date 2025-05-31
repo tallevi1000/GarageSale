@@ -34,11 +34,19 @@ main {
   padding: 10px;
   margin: 0;
   user-select: none;
-  transition: background-color 0.2s ease;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
 }
 
 .category-title:hover {
   background-color: #e0e0e0;
+}
+
+.category-title .arrow {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 8px;
 }
 
 .item-grid.collapsed {

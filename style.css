@@ -49,22 +49,30 @@ main {
   margin-right: 8px;
 }
 
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1em;
+}
+
 .item-grid.collapsed {
   display: none;
 }
 
+/*
 .items {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
 }
+*/
 
 .item {
   background: white;
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 0.5em;
-  width: calc(50% - 1em);
+  /*width: calc(50% - 1em);*/
   box-sizing: border-box;
   text-align: center;
 }

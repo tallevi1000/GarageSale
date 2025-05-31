@@ -13,12 +13,24 @@ function displayCatalog(data) {
     const categorySection = document.createElement("section");
     categorySection.className = "category";
 
-    // Create category title
+    // Create category title wrapper
     const title = document.createElement("h2");
     title.className = "category-title";
-    title.textContent = category;
 
-    // Create item grid
+    // Create arrow + text + count
+    const arrow = document.createElement("span");
+    arrow.className = "arrow";
+    arrow.textContent = "▼";
+
+    const titleText = document.createElement("span");
+    titleText.className = "title-text";
+    titleText.textContent = ` ${category} (${items.length})`;
+
+    title.appendChild(arrow);
+    title.appendChild(titleText);
+    categorySection.appendChild(title);
+
+    // Item grid
     const itemGrid = document.createElement("div");
     itemGrid.className = "item-grid";
 
@@ -33,14 +45,13 @@ function displayCatalog(data) {
       itemGrid.appendChild(itemDiv);
     });
 
-    // Append title and item grid to category section
-    categorySection.appendChild(title);
     categorySection.appendChild(itemGrid);
     container.appendChild(categorySection);
 
-    // Add click event listener to toggle visibility
+    // Toggle visibility + arrow direction
     title.addEventListener("click", () => {
       itemGrid.classList.toggle("collapsed");
+      arrow.textContent = itemGrid.classList.contains("collapsed") ? "►" : "▼";
     });
   });
 }

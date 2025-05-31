@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data/items.json")
+    .then((response) => response.json())
+    .then((data) => displayCatalog(data))
+    .catch((error) => console.error("Error loading items:", error));
+});
+
 function displayCatalog(data, container = document.getElementById("catalog")) {
   Object.entries(data).forEach(([categoryName, categoryValue]) => {
     const categorySection = document.createElement("section");

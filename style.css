@@ -91,8 +91,8 @@ main {
 /* Desktop image size and tighter spacing */
 @media (min-width: 601px) {
   .item-image {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     padding: 2px;
     margin: 0 auto;
   }

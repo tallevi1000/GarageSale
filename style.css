@@ -142,3 +142,25 @@ body.no-scroll {
     height: auto;
   }
 }
+
+/* Default image style */
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s;
+  padding: 4px;
+  margin: auto;
+}
+
+/* On larger screens, increase image size and reduce padding around it */
+@media (min-width: 601px) {
+  .item-image {
+    width: 300px;
+    height: 300px;
+    padding: 2px;  /* reduced padding */
+    margin: 0 auto;
+  }
+}

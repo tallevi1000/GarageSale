@@ -70,7 +70,6 @@ function createItemGrid(items) {
     const itemDiv = document.createElement("div");
     itemDiv.className = "item";
 
-    // Make the entire item clickable
     itemDiv.addEventListener("click", () =>
       createImageModal(`images/${item.image}`, item.name, item.price, item.description)
     );
@@ -99,15 +98,12 @@ function createImageModal(imageSrc, name, price, description) {
   const overlay = document.createElement("div");
   overlay.className = "image-overlay";
 
-  const contentWrapper = document.createElement("div");
-  contentWrapper.style.textAlign = "center";
-  contentWrapper.style.maxWidth = "90%";
-  contentWrapper.style.maxHeight = "90%";
-  contentWrapper.style.color = "white";
+  const contentBox = document.createElement("div");
+  contentBox.className = "overlay-content-box";
 
   const img = document.createElement("img");
   img.src = imageSrc;
-  img.className = "overlay-image";
+  img.alt = name;
 
   const nameElem = document.createElement("h2");
   nameElem.textContent = name;
@@ -134,13 +130,13 @@ function createImageModal(imageSrc, name, price, description) {
     }
   });
 
-  contentWrapper.appendChild(img);
-  contentWrapper.appendChild(nameElem);
-  contentWrapper.appendChild(priceElem);
-  contentWrapper.appendChild(descElem);
+  contentBox.appendChild(img);
+  contentBox.appendChild(nameElem);
+  contentBox.appendChild(priceElem);
+  contentBox.appendChild(descElem);
 
   overlay.appendChild(closeBtn);
-  overlay.appendChild(contentWrapper);
+  overlay.appendChild(contentBox);
   document.body.appendChild(overlay);
   document.body.classList.add("no-scroll");
 }

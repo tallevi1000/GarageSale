@@ -113,10 +113,10 @@ function createImageModal(imageSrc, name, price, description) {
   nameElem.textContent = name;
 
   const priceElem = document.createElement("p");
-  priceElem.innerHTML = `<strong>Price:</strong> ₪${price}`;
+  priceElem.innerHTML = `<strong>מחיר:</strong> ₪${price}`;
 
   const descElem = document.createElement("p");
-  descElem.innerHTML = `<strong>Description:</strong> ${description || "—"}`;
+  descElem.innerHTML = `<strong>תיאור:</strong> ${description || "—"}`;
 
   const closeBtn = document.createElement("span");
   closeBtn.className = "close-btn";

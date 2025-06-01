@@ -3,63 +3,74 @@
                    {
                        "name":  "כסא",
                        "price":  200,
-                       "image":  "1.jpg"
+                       "image":  "1.jpg",
+                       "description":  "סט של 6 כסאות"
                    },
                    {
                        "name":  "שולחן",
                        "price":  450,
-                       "image":  "1.jpg"
+                       "image":  "1.jpg",
+                       "description":  "שולחן נפתח"
                    }
                ],
     "מטבח":  [
                  {
                      "name":  "תנור",
                      "price":  150,
-                     "image":  "1.jpg"
+                     "image":  "1.jpg",
+                     "description":  "מצב חדש"
                  },
                  {
                      "name":  "מקרר",
                      "price":  250,
-                     "image":  "1.jpg"
+                     "image":  "1.jpg",
+                     "description":  "לא חדש"
                  },
                  {
                      "name":  "כירה",
                      "price":  360,
-                     "image":  "1.jpg"
+                     "image":  "1.jpg",
+                     "description":  "גז"
                  }
              ],
     "צעצועים":  [
                     {
                         "name":  "סט לגו",
                         "price":  100,
-                        "image":  "1.jpg"
+                        "image":  "1.jpg",
+                        "description":  "מלא חלקים"
                     }
                 ],
     "מכשירי חשמל":  [
                         {
                             "name":  "לפטופ",
                             "price":  200,
-                            "image":  "1.jpg"
+                            "image":  "1.jpg",
+                            "description":  "עובד מעולה"
                         },
                         {
                             "name":  "רמקול",
                             "price":  450,
-                            "image":  "1.jpg"
+                            "image":  "1.jpg",
+                            "description":  "לא עובד "
                         },
                         {
                             "name":  "טלויזיה",
                             "price":  100,
-                            "image":  "1.jpg"
+                            "image":  "1.jpg",
+                            "description":  "ממש גדולה ועובדת טוב"
                         },
                         {
                             "name":  "סטרימר",
                             "price":  80,
-                            "image":  "1.jpg"
+                            "image":  "1.jpg",
+                            "description":  "מנגן הכל"
                         },
                         {
                             "name":  "מסך 27 אינטש",
                             "price":  650,
-                            "image":  "1.jpg"
+                            "image":  "1.jpg",
+                            "description":  "מחיר מעולה"
                         }
                     ],
     "בגדים":  {
@@ -67,19 +78,22 @@
                                 {
                                     "name":  "חולצה",
                                     "price":  25,
-                                    "image":  "1.jpg"
+                                    "image":  "1.jpg",
+                                    "description":  "חולצה יפה"
                                 },
                                 {
                                     "name":  "חולצה",
                                     "price":  30,
-                                    "image":  "1.jpg"
+                                    "image":  "1.jpg",
+                                    "description":  "חולצה לא יפה"
                                 }
                             ],
                   "נשים":  [
                                {
                                    "name":  "שמלה",
                                    "price":  40,
-                                   "image":  "1.jpg"
+                                   "image":  "1.jpg",
+                                   "description":  "שמלת קיץ"
                                }
                            ]
               }

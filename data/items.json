@@ -1,88 +1,86 @@
 {
-    "Furniture":  [
-                      {
-                          "name":  "Wooden Chair",
-                          "price":  200,
-                          "image":  "1.jpg"
-                      },
-                      {
-                          "name":  "Table",
-                          "price":  450,
-                          "image":  "1.jpg"
-                      }
-                  ],
-    "Electronics":  [
+    "רהיטים":  [
+                   {
+                       "name":  "כסא",
+                       "price":  200,
+                       "image":  "1.jpg"
+                   },
+                   {
+                       "name":  "שולחן",
+                       "price":  450,
+                       "image":  "1.jpg"
+                   }
+               ],
+    "מטבח":  [
+                 {
+                     "name":  "תנור",
+                     "price":  150,
+                     "image":  "1.jpg"
+                 },
+                 {
+                     "name":  "מקרר",
+                     "price":  250,
+                     "image":  "1.jpg"
+                 },
+                 {
+                     "name":  "כירה",
+                     "price":  360,
+                     "image":  "1.jpg"
+                 }
+             ],
+    "צעצועים":  [
+                    {
+                        "name":  "סט לגו",
+                        "price":  100,
+                        "image":  "1.jpg"
+                    }
+                ],
+    "מכשירי חשמל":  [
                         {
-                            "name":  "Laptop",
+                            "name":  "לפטופ",
                             "price":  200,
                             "image":  "1.jpg"
                         },
                         {
-                            "name":  "Speaker",
+                            "name":  "רמקול",
                             "price":  450,
                             "image":  "1.jpg"
                         },
                         {
-                            "name":  "TV",
+                            "name":  "טלויזיה",
                             "price":  100,
                             "image":  "1.jpg"
                         },
                         {
-                            "name":  "Streamer",
+                            "name":  "סטרימר",
                             "price":  80,
                             "image":  "1.jpg"
                         },
                         {
-                            "name":  "27 inch Monitor",
+                            "name":  "מסך 27 אינטש",
                             "price":  650,
                             "image":  "1.jpg"
                         }
                     ],
-    "Clothes":  {
-                    "Women":  [
-                                         {
-                                             "name":  "Dress",
-                                             "price":  40,
-                                             "image":  "1.jpg"
-                                         }
-                                     ],
-                    "Men":  {
-                                       "Shirts":  [
-                                                      {
-                                                          "name":  "T-shirt",
-                                                          "price":  25,
-                                                          "image":  "1.jpg"
-                                                      },
-                                                      {
-                                                          "name":  "T-shirt2",
-                                                          "price":  30,
-                                                          "image":  "1.jpg"
-                                                      }
-                                                  ]
-                                   }
-                },
-    "Kitchen":  [
-                    {
-                        "name":  "Oven",
-                        "price":  150,
-                        "image":  "1.jpg"
-                    },
-                    {
-                        "name":  "Fridge",
-                        "price":  250,
-                        "image":  "1.jpg"
-                    },
-                    {
-                        "name":  "Stove",
-                        "price":  360,
-                        "image":  "1.jpg"
-                    }
-                ],
-    "Toys":  [
-                 {
-                     "name":  "Lego Set",
-                     "price":  100,
-                     "image":  "1.jpg"
-                 }
-             ]
+    "בגדים":  {
+                  "גברים":  [
+                                {
+                                    "name":  "חולצה",
+                                    "price":  25,
+                                    "image":  "1.jpg"
+                                },
+                                {
+                                    "name":  "חולצה",
+                                    "price":  30,
+                                    "image":  "1.jpg"
+                                }
+                            ],
+                  "נשים":  [
+                               {
+                                   "name":  "שמלה",
+                                   "price":  40,
+                                   "image":  "1.jpg"
+                               }
+                           ]
+              }
 }

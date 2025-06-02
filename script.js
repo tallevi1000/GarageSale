@@ -71,11 +71,11 @@ function createItemGrid(items) {
     itemDiv.className = "item";
 
     itemDiv.addEventListener("click", () =>
-      createImageModal(`images/${item.image}`, item.name, item.price, item.description)
+      createImageModal(item.images || [item.image], item.name, item.price, item.description)
     );
 
     const img = document.createElement("img");
-    img.src = `images/${item.image}`;
+    img.src = `images/${(item.images && item.images[0]) || item.image}`;
     img.alt = item.name;
     img.className = "item-image";
 
@@ -94,7 +94,9 @@ function createItemGrid(items) {
   return itemGrid;
 }
 
-function createImageModal(imageSrc, name, price, description) {
+function createImageModal(imageList, name, price, description) {
+  let currentIndex = 0;
+
   const overlay = document.createElement("div");
   overlay.className = "image-overlay";
 
@@ -102,8 +104,38 @@ function createImageModal(imageSrc, name, price, description) {
   contentBox.className = "overlay-content-box";
 
   const img = document.createElement("img");
-  img.src = imageSrc;
+  img.className = "overlay-image";
+  img.src = `images/${imageList[currentIndex]}`;
   img.alt = name;
+
+  const prevBtn = document.createElement("button");
+  prevBtn.className = "nav-btn prev-btn";
+  prevBtn.textContent = "❮";
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateModal();
+    }
+  });
+
+  const nextBtn = document.createElement("button");
+  nextBtn.className = "nav-btn next-btn";
+  nextBtn.textContent = "❯";
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < imageList.length - 1) {
+      currentIndex++;
+      updateModal();
+    }
+  });
+
+  function updateModal() {
+    img.src = `images/${imageList[currentIndex]}`;
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === imageList.length - 1;
+
+    prevBtn.style.opacity = prevBtn.disabled ? 0.3 : 1;
+    nextBtn.style.opacity = nextBtn.disabled ? 0.3 : 1;
+  }
 
   const nameElem = document.createElement("h2");
   nameElem.textContent = name;
@@ -117,7 +149,6 @@ function createImageModal(imageSrc, name, price, description) {
   const closeBtn = document.createElement("span");
   closeBtn.className = "close-btn";
   closeBtn.textContent = "✕";
-
   closeBtn.addEventListener("click", () => {
     document.body.removeChild(overlay);
     document.body.classList.remove("no-scroll");
@@ -130,7 +161,10 @@ function createImageModal(imageSrc, name, price, description) {
     }
   });
 
+  // Append elements
+  contentBox.appendChild(prevBtn);
   contentBox.appendChild(img);
+  contentBox.appendChild(nextBtn);
   contentBox.appendChild(nameElem);
   contentBox.appendChild(priceElem);
   contentBox.appendChild(descElem);
@@ -139,4 +173,6 @@ function createImageModal(imageSrc, name, price, description) {
   overlay.appendChild(contentBox);
   document.body.appendChild(overlay);
   document.body.classList.add("no-scroll");
+
+  updateModal(); // Initialize navigation state
 }

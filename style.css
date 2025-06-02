@@ -187,9 +187,9 @@ body.no-scroll {
 }
 
 /* Navigation buttons inside modal */
-.modal-nav-button {
-  position: fixed; /* Fixed to viewport */
-  top: 50%; /* Centered vertically */
+.nav-btn {
+  position: absolute;
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
@@ -200,23 +200,22 @@ body.no-scroll {
   z-index: 10001;
   border-radius: 50%;
   transition: background-color 0.2s, opacity 0.2s;
-  pointer-events: auto;
 }
 
-.modal-nav-button:hover:not(:disabled) {
+.nav-btn:hover:not(:disabled) {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.modal-nav-button:disabled {
+.nav-btn:disabled {
   cursor: not-allowed;
   opacity: 0.3;
 }
 
-/* Positioning for modal navigation buttons */
-.prev-button {
-  left: 20px; /* Adjust as needed */
+/* Positioning */
+.prev-btn {
+  left: 10px;
 }
 
-.next-button {
-  right: 20px; /* Adjust as needed */
+.next-btn {
+  right: 10px;
 }

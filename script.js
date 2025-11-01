@@ -89,7 +89,7 @@ function createItemGrid(items) {
     const itemNumber = firstImage.split('/').pop().split('.')[0]; // extracts "5"
 
     const itemNumberEl = document.createElement('p');
-    itemNumberEl.textContent = `מוצר #${itemNumber}`;
+    itemNumberEl.textContent = `פריט מספר ${itemNumber}`;
     itemDiv.appendChild(itemNumberEl);
 
 

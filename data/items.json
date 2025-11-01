@@ -1,129 +1,182 @@
 {
     "רהיטים":  [
                    {
-                       "name":  "כסא",
-                       "price":  200,
+                       "name":  "קופסא",
+                       "price":  20,
                        "images":  [
-                                      "1.jpg"
+                                      "1.jpg",
+                                      "26.jpg"
                                   ],
-                       "description":  "סט של 6 כסאות"
+                       "description":  "קופסאת איקאה גדולה עם מכסה"
                    },
                    {
-                       "name":  "שולחן",
-                       "price":  450,
+                       "name":  "ארון",
+                       "price":  300,
                        "images":  [
-                                      "1.jpg"
+                                      "2.jpg"
                                   ],
-                       "description":  "שולחן נפתח"
+                       "description":  "ארון איקאה עומק 45 רוחב 1 מטר"
+                   },
+                   {
+                       "name":  "ספה",
+                       "price":  1000,
+                       "images":  [
+                                      "3.jpg"
+                                  ],
+                       "description":  "ספה דמוי עור"
+                   },
+                   {
+                       "name":  "שולחנות סלון",
+                       "price":  300,
+                       "images":  [
+                                      "4.jpg"
+                                  ],
+                       "description":  "סט שולחנות מעץ לסלון"
+                   },
+                   {
+                       "name":  "ארונית",
+                       "price":  300,
+                       "images":  [
+                                      "6.jpg"
+                                  ],
+                       "description":  "ארונית מדפים איקאה 3 תאים"
+                   },
+                   {
+                       "name":  "מגירות",
+                       "price":  300,
+                       "images":  [
+                                      "7.jpg"
+                                  ],
+                       "description":  "ארונית איקאה 4 מגירות"
+                   },
+                   {
+                       "name":  "מזנון ",
+                       "price":  200,
+                       "images":  [
+                                      "8.jpg"
+                                  ],
+                       "description":  "מזנון איקאה עם מגירה ודלת"
+                   },
+                   {
+                       "name":  "פינת אוכל",
+                       "price":  1000,
+                       "images":  [
+                                      "9.jpg"
+                                  ],
+                       "description":  "פינת אוכל עם 6 כסאות נפתחת ל3 הרחבות"
+                   },
+                   {
+                       "name":  "כסאות",
+                       "price":  80,
+                       "images":  [
+                                      "10.jpg"
+                                  ],
+                       "description":  "ארונית איקאה 4 תאים"
+                   },
+                   {
+                       "name":  "מיטה זוגית",
+                       "price":  1500,
+                       "images":  [
+                                      "16.jpg"
+                                  ],
+                       "description":  "מיטה 1.60 מטר עם 2 שידות צד"
+                   },
+                   {
+                       "name":  "קומודה",
+                       "price":  800,
+                       "images":  [
+                                      "17.jpg"
+                                  ],
+                       "description":  "קומודה 1.60 מטר עם 8 מגירות"
+                   },
+                   {
+                       "name":  "שידת החתלה",
+                       "price":  300,
+                       "images":  [
+                                      "18.jpg"
+                                  ],
+                       "description":  "שידת החתלה 1.20 מטר"
+                   },
+                   {
+                       "name":  "מיטת תינוק",
+                       "price":  300,
+                       "images":  [
+                                      "19.jpg"
+                                  ],
+                       "description":  "מיטת תינוק סגל כולל מזרון"
+                   },
+                   {
+                       "name":  "מיטת חבר",
+                       "price":  500,
+                       "images":  [
+                                      "20.jpg"
+                                  ],
+                       "description":  "מיטה נפתחת כולל מזרונים"
+                   },
+                   {
+                       "name":  "ארון קיר",
+                       "price":  1000,
+                       "images":  [
+                                      "21.jpg",
+                                      "22.jpg",
+                                      "23.jpg"
+                                  ],
+                       "description":  "2 ארונות של 1 מטר עומק 60 סמ איקאה"
+                   },
+                   {
+                       "name":  "ספה",
+                       "price":  1000,
+                       "images":  [
+                                      "25.jpg"
+                                  ],
+                       "description":  "ספה מבד"
                    }
                ],
-    "מטבח":  [
-                 {
-                     "name":  "תנור",
-                     "price":  150,
-                     "images":  [
-                                    "1.jpg"
-                                ],
-                     "description":  "מצב חדש"
-                 },
-                 {
-                     "name":  "מקרר",
-                     "price":  250,
-                     "images":  [
-                                    "1.jpg"
-                                ],
-                     "description":  "לא חדש"
-                 },
-                 {
-                     "name":  "כירה",
-                     "price":  360,
-                     "images":  [
-                                    "1.jpg"
-                                ],
-                     "description":  "גז"
-                 }
-             ],
-    "צעצועים":  [
-                    {
-                        "name":  "סט לגו",
-                        "price":  100,
-                        "images":  [
-                                       "1.jpg"
-                                   ],
-                        "description":  "מלא חלקים"
-                    }
-                ],
     "מכשירי חשמל":  [
                         {
-                            "name":  "לפטופ",
-                            "price":  200,
-                            "images":  [
-                                           "1.jpg"
-                                       ],
-                            "description":  "עובד מעולה"
-                        },
-                        {
-                            "name":  "רמקול",
-                            "price":  450,
-                            "images":  [
-                                           "1.jpg"
-                                       ],
-                            "description":  "לא עובד "
-                        },
-                        {
                             "name":  "טלויזיה",
-                            "price":  100,
+                            "price":  1500,
                             "images":  [
-                                           "1.jpg"
+                                           "5.jpg"
                                        ],
-                            "description":  "ממש גדולה ועובדת טוב"
+                            "description":  "טלויזיה TCL סמארט 65 אינטש 4K"
                         },
                         {
-                            "name":  "סטרימר",
-                            "price":  80,
+                            "name":  "מקרר",
+                            "price":  1000,
                             "images":  [
-                                           "1.jpg"
+                                           "12.jpg",
+                                           "13.jpg"
                                        ],
-                            "description":  "מנגן הכל"
+                            "description":  "מקרר ליבר"
                         },
                         {
-                            "name":  "מסך 27 אינטש",
-                            "price":  650,
+                            "name":  "מייבש כביסה",
+                            "price":  500,
                             "images":  [
-                                           "1.jpg"
+                                           "14.jpg"
                                        ],
-                            "description":  "מחיר מעולה"
+                            "description":  "מייבש בלומברג 8 קילו"
                         }
                     ],
-    "בגדים":  {
-                  "גברים":  [
-                                {
-                                    "name":  "חולצה",
-                                    "price":  25,
-                                    "images":  [
-                                                   "1.jpg",
-                                                   "tshirt.jpg"
-                                               ],
-                                    "description":  "חולצה יפה"
-                                },
-                                {
-                                    "name":  "חולצה",
-                                    "price":  30,
-                                    "images":  [
-                                                   "1.jpg"
-                                               ],
-                                    "description":  "חולצה לא יפה"
-                                }
-                            ],
-                  "נשים":  [
-                               {
-                                   "name":  "שמלה",
-                                   "price":  40,
-                                   "images":  [
-                                                  "1.jpg"
-                                              ],
-                                   "description":  "שמלת קיץ"
-                               }
-                           ]
-              }
+    "צעצועים":  [
+                    {
+                        "name":  "ערכת רופא",
+                        "price":  20,
+                        "images":  [
+                                       "15.jpg"
+                                   ],
+                        "description":  "ערכת רופא"
+                    }
+                ],
+    "ילדים ותינוקות":  [
+                           {
+                               "name":  "מנשא",
+                               "price":  50,
+                               "images":  [
+                                              "24.jpg"
+                                          ],
+                               "description":  "מנשא לתינוק מגיל לידה עד 14 קילו"
+                           }
+                       ]
 }

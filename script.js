@@ -85,6 +85,14 @@ function createItemGrid(items) {
     const price = document.createElement("p");
     price.innerHTML = `<strong>Price:</strong> ₪${item.price}`;
 
+    const firstImage = item.images[0]; // e.g., "5.jpg"
+    const itemNumber = firstImage.split('/').pop().split('.')[0]; // extracts "5"
+
+    const itemNumberEl = document.createElement('p');
+    itemNumberEl.textContent = `Item #${itemNumber}`;
+    itemDiv.appendChild(itemNumberEl);
+
+
     itemDiv.appendChild(img);
     itemDiv.appendChild(name);
     itemDiv.appendChild(price);

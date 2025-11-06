@@ -680,9 +680,9 @@
                         },
                         {
                             "name":  "שמלה",
-                            "price":  20,
+                            "price":  30,
                             "images":  [
-                                           "197.jpg"
+                                           "198.jpg"
                                        ],
                             "description":  "שמלה"
                         },
@@ -690,7 +690,7 @@
                             "name":  "שמלה",
                             "price":  40,
                             "images":  [
-                                           "197.jpg"
+                                           "199.jpg"
                                        ],
                             "description":  "שמלה"
                         },
@@ -1207,7 +1207,7 @@
                              "name":  "בגדי גוף",
                              "price":  50,
                              "images":  [
-                                            "140.jpg"
+                                            "143.jpg"
                                         ],
                              "description":  "רביעית בגדי גוף חדש"
                          },

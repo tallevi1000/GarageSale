@@ -1,21 +1,5 @@
-{
+﻿{
     "כללי":  [
-                 {
-                     "name":  "מחצלת",
-                     "price":  30,
-                     "images":  [
-                                    "124.jpg"
-                                ],
-                     "description":  "מחצלת ענקית 5 מטר "
-                 },
-                 {
-                     "name":  "יוגה",
-                     "price":  10,
-                     "images":  [
-                                    "182.jpg"
-                                ],
-                     "description":  "מזרן וגליל ליוגה. כל מוצר 10 שקלים"
-                 },
                  {
                      "name":  "מסגרות לתמונה",
                      "price":  10,
@@ -47,6 +31,14 @@
                                     "209.jpg"
                                 ],
                      "description":  "מסגרות לתמונה. כל פריט 10 שקלים"
+                 },
+                 {
+                     "name":  "תמי 4",
+                     "price":  100,
+                     "images":  [
+                                    "260.jpg"
+                                ],
+                     "description":  "ערכת מסנן + מסנן ונורה לתמי 4"
                  }
              ],
     "צעצועים ומשחקים":  [
@@ -67,30 +59,6 @@
                                 "description":  "2 ספרים"
                             },
                             {
-                                "name":  "מכוניות",
-                                "price":  20,
-                                "images":  [
-                                               "109.jpg"
-                                           ],
-                                "description":  "סט מכוניות מעץ"
-                            },
-                            {
-                                "name":  "טרקטור",
-                                "price":  20,
-                                "images":  [
-                                               "110.jpg"
-                                           ],
-                                "description":  "טרקטור מתפרק עם מברגה"
-                            },
-                            {
-                                "name":  "קוביות",
-                                "price":  50,
-                                "images":  [
-                                               "112.jpg"
-                                           ],
-                                "description":  "סט קוביות מעץ"
-                            },
-                            {
                                 "name":  "מדבקות קיר",
                                 "price":  10,
                                 "images":  [
@@ -105,14 +73,6 @@
                                                "121.jpg"
                                            ],
                                 "description":  "סט מכוניות מפלסטיק"
-                            },
-                            {
-                                "name":  "בובה",
-                                "price":  10,
-                                "images":  [
-                                               "125.jpg"
-                                           ],
-                                "description":  "מיני מאוס גדולה"
                             },
                             {
                                 "name":  "מדבקות קיר",
@@ -137,22 +97,6 @@
                                                "130.jpg"
                                            ],
                                 "description":  "מסלול מכוניות להרכבה"
-                            },
-                            {
-                                "name":  "מגנטים",
-                                "price":  50,
-                                "images":  [
-                                               "131.jpg"
-                                           ],
-                                "description":  "מגנטים"
-                            },
-                            {
-                                "name":  "משחק השחלה",
-                                "price":  30,
-                                "images":  [
-                                               "132.jpg"
-                                           ],
-                                "description":  "משחק השחלה מעץ"
                             },
                             {
                                 "name":  "קוביות",
@@ -187,14 +131,6 @@
                                 "description":  "משחק חשיבה מעץ"
                             },
                             {
-                                "name":  "לגו גדול",
-                                "price":  10,
-                                "images":  [
-                                               "137.jpg"
-                                           ],
-                                "description":  "לגו גדול"
-                            },
-                            {
                                 "name":  "ערכת הרכבה",
                                 "price":  20,
                                 "images":  [
@@ -209,14 +145,6 @@
                                                "175.jpg"
                                            ],
                                 "description":  "רעשנים רכים. כל פריט 10 שקלים"
-                            },
-                            {
-                                "name":  "בובה",
-                                "price":  20,
-                                "images":  [
-                                               "176.jpg"
-                                           ],
-                                "description":  "פיל רוקד ושר באנגלית"
                             },
                             {
                                 "name":  "בובה",
@@ -254,7 +182,7 @@
                                 "name":  "משחק קופסא",
                                 "price":  20,
                                 "images":  [
-                                               "202.jpg"
+                                               "203.jpg"
                                            ],
                                 "description":  "משחק קופסא חדש"
                             },
@@ -357,22 +285,6 @@
                                 "description":  "במצב כמו חדש"
                             },
                             {
-                                "name":  "משחק",
-                                "price":  20,
-                                "images":  [
-                                               "241.jpg"
-                                           ],
-                                "description":  "רמיקוב"
-                            },
-                            {
-                                "name":  "מטבח",
-                                "price":  80,
-                                "images":  [
-                                               "243.jpg"
-                                           ],
-                                "description":  "מטבח לילדים ואביזרים"
-                            },
-                            {
                                 "name":  "סט מעץ",
                                 "price":  30,
                                 "images":  [
@@ -392,17 +304,65 @@
                                 "name":  "סט מעץ",
                                 "price":  30,
                                 "images":  [
-                                               "246.jpg"
-                                           ],
-                                "description":  "סט עוגה מליסה ודאג"
-                            },
-                            {
-                                "name":  "סט מעץ",
-                                "price":  30,
-                                "images":  [
                                                "247.jpg"
                                            ],
                                 "description":  "סט פנקייק מליסה ודאג"
+                            },
+                            {
+                                "name":  "משחק",
+                                "price":  10,
+                                "images":  [
+                                               "252.jpg"
+                                           ],
+                                "description":  "משחק חדש"
+                            },
+                            {
+                                "name":  "משחק קופסא",
+                                "price":  20,
+                                "images":  [
+                                               "253.jpg"
+                                           ],
+                                "description":  "משחק חדש"
+                            },
+                            {
+                                "name":  "חרוזים להשחלה",
+                                "price":  10,
+                                "images":  [
+                                               "254.jpg"
+                                           ],
+                                "description":  "חרוזים להשחלה"
+                            },
+                            {
+                                "name":  "מכונית",
+                                "price":  10,
+                                "images":  [
+                                               "255.jpg"
+                                           ],
+                                "description":  "מכונית חדשה"
+                            },
+                            {
+                                "name":  "משחק יוגה",
+                                "price":  10,
+                                "images":  [
+                                               "256.jpg"
+                                           ],
+                                "description":  "משחק יוגה"
+                            },
+                            {
+                                "name":  "משחק קלפים",
+                                "price":  20,
+                                "images":  [
+                                               "257.jpg"
+                                           ],
+                                "description":  "משחק קלפים"
+                            },
+                            {
+                                "name":  "פאזלים לתינוקות",
+                                "price":  10,
+                                "images":  [
+                                               "258.jpg"
+                                           ],
+                                "description":  "פאזלים לתינוקות"
                             }
                         ],
     "בגדים לנשים":  [
@@ -762,28 +722,12 @@
                       "description":  "סט 3 קופסאות פלסטיק"
                   },
                   {
-                      "name":  "סלסלה",
-                      "price":  10,
-                      "images":  [
-                                     "97.jpg"
-                                 ],
-                      "description":  "סלסלה"
-                  },
-                  {
                       "name":  "מדף",
                       "price":  10,
                       "images":  [
                                      "99.jpg"
                                  ],
                       "description":  "מדף איקאה"
-                  },
-                  {
-                      "name":  "קופסה",
-                      "price":  10,
-                      "images":  [
-                                     "100.jpg"
-                                 ],
-                      "description":  "קופסה"
                   },
                   {
                       "name":  "קופסאות",
@@ -802,12 +746,29 @@
                       "description":  "קופסא איקאה"
                   },
                   {
-                      "name":  "סלסלה",
+                      "name":  "קופסא",
                       "price":  10,
                       "images":  [
-                                     "139.jpg"
+                                     "250.jpg",
+                                     "251.jpg"
                                  ],
-                      "description":  "סלסלה"
+                      "description":  "קופסא בינונית איקאה"
+                  },
+                  {
+                      "name":  "שקיות אחסון",
+                      "price":  10,
+                      "images":  [
+                                     "259.jpg"
+                                 ],
+                      "description":  "שקיות נסגרות איקאה"
+                  },
+                  {
+                      "name":  "שקיות אחסון",
+                      "price":  10,
+                      "images":  [
+                                     "268.jpg"
+                                 ],
+                      "description":  "שקיות נסגרות איקאה. 10 שח לכל קופסא"
                   }
               ],
     "רהיטים":  [
@@ -940,6 +901,14 @@
                                       "242.jpg"
                                   ],
                        "description":  "מזנון מעץ עם 2 מגירות וקלאפה"
+                   },
+                   {
+                       "name":  "כוורת",
+                       "price":  100,
+                       "images":  [
+                                      "270.jpg"
+                                  ],
+                       "description":  "כוורת 4 תאים איקאה"
                    }
                ],
     "מכשירי חשמל":  [
@@ -983,14 +952,6 @@
                                            "90.jpg"
                                        ],
                             "description":  "בלנדר נינגה"
-                        },
-                        {
-                            "name":  "מכונת כביסה ניידת",
-                            "price":  50,
-                            "images":  [
-                                           "141.jpg"
-                                       ],
-                            "description":  "מכונת כביסה ניידת חדשה"
                         }
                     ],
     "בגדים לגברים":  [
@@ -1069,14 +1030,6 @@
                                "description":  "מנשא לתינוק מגיל לידה עד 14 קילו"
                            },
                            {
-                               "name":  "אינהלציה",
-                               "price":  30,
-                               "images":  [
-                                              "76.jpg"
-                                          ],
-                               "description":  "מכשיר אינהלציה"
-                           },
-                           {
                                "name":  "מחזיק כוסות",
                                "price":  10,
                                "images":  [
@@ -1138,7 +1091,8 @@
                                "name":  "משאבת חלב",
                                "price":  50,
                                "images":  [
-                                              "173.jpg"
+                                              "173.jpg",
+                                              "277.jpg"
                                           ],
                                "description":  "משאבת חלב + בקבוקים לאחסון"
                            },
@@ -1157,6 +1111,15 @@
                                               "210.jpg"
                                           ],
                                "description":  "אמבטיה לתינוק"
+                           },
+                           {
+                               "name":  "מגבונים לעיניים",
+                               "price":  30,
+                               "images":  [
+                                              "274.jpg",
+                                              "272.jpg"
+                                          ],
+                               "description":  "מגבונים לעיניים"
                            }
                        ],
     "בגדים לילדים":  [
@@ -1303,22 +1266,6 @@
                                             "156.jpg"
                                         ],
                              "description":  "מעיל מידה 12-18 חודשים חדש"
-                         },
-                         {
-                             "name":  "גאקט",
-                             "price":  30,
-                             "images":  [
-                                            "157.jpg"
-                                        ],
-                             "description":  "זאקט מידה 18-24 חודשים חדש"
-                         },
-                         {
-                             "name":  "בגד גוף",
-                             "price":  10,
-                             "images":  [
-                                            "158.jpg"
-                                        ],
-                             "description":  "בגד גוף מידה 12-18 חודשים חדש"
                          },
                          {
                              "name":  "סט בגדים",
@@ -1499,14 +1446,6 @@
                      "description":  "קערת פלסטיק עם כפות"
                  },
                  {
-                     "name":  "פיירקסים",
-                     "price":  30,
-                     "images":  [
-                                    "59.jpg"
-                                ],
-                     "description":  "זוג פיירקסים"
-                 },
-                 {
                      "name":  "כלי הגשה",
                      "price":  30,
                      "images":  [
@@ -1521,14 +1460,6 @@
                                     "61.jpg"
                                 ],
                      "description":  "זוג פיירקסים"
-                 },
-                 {
-                     "name":  "קערות",
-                     "price":  50,
-                     "images":  [
-                                    "62.jpg"
-                                ],
-                     "description":  "סט 3 קערות זכוכית עם מכסים"
                  },
                  {
                      "name":  "קערות",
@@ -1571,22 +1502,6 @@
                      "description":  "זוג קערות הגשה"
                  },
                  {
-                     "name":  "סיר",
-                     "price":  40,
-                     "images":  [
-                                    "68.jpg"
-                                ],
-                     "description":  "סיר פלוס כפפות"
-                 },
-                 {
-                     "name":  "נפה",
-                     "price":  10,
-                     "images":  [
-                                    "69.jpg"
-                                ],
-                     "description":  "נפה קטן"
-                 },
-                 {
                      "name":  "כלי הגשה",
                      "price":  20,
                      "images":  [
@@ -1611,68 +1526,12 @@
                      "description":  "סיר גחנון קטן"
                  },
                  {
-                     "name":  "סיר אידוי",
-                     "price":  20,
-                     "images":  [
-                                    "74.jpg"
-                                ],
-                     "description":  "סיר אידוי"
-                 },
-                 {
                      "name":  "סיר גחנון",
                      "price":  20,
                      "images":  [
                                     "75.jpg"
                                 ],
                      "description":  "סיר גחנון ענק"
-                 },
-                 {
-                     "name":  "תבניות",
-                     "price":  10,
-                     "images":  [
-                                    "91.jpg"
-                                ],
-                     "description":  "תבניות אפיה"
-                 },
-                 {
-                     "name":  "תבנית",
-                     "price":  10,
-                     "images":  [
-                                    "92.jpg"
-                                ],
-                     "description":  "תבנית אפיה"
-                 },
-                 {
-                     "name":  "משקל",
-                     "price":  10,
-                     "images":  [
-                                    "93.jpg"
-                                ],
-                     "description":  "משקל למטבח"
-                 },
-                 {
-                     "name":  "כוס מדידה",
-                     "price":  10,
-                     "images":  [
-                                    "94.jpg"
-                                ],
-                     "description":  "כוס מדידה"
-                 },
-                 {
-                     "name":  "קוצץ ידני",
-                     "price":  20,
-                     "images":  [
-                                    "95.jpg"
-                                ],
-                     "description":  "קוצץ ידני"
-                 },
-                 {
-                     "name":  "צלחות",
-                     "price":  20,
-                     "images":  [
-                                    "108.jpg"
-                                ],
-                     "description":  "סט צלחות פלסטיק"
                  },
                  {
                      "name":  "בלון גז",
@@ -1702,7 +1561,7 @@
                      "name":  "סכין",
                      "price":  50,
                      "images":  [
-                                    "147.jpg"
+                                    "149.jpg"
                                 ],
                      "description":  "סכין חדשה"
                  },
@@ -1713,30 +1572,6 @@
                                     "151.jpg"
                                 ],
                      "description":  "מרדד פסטה חדש"
-                 },
-                 {
-                     "name":  "מגש לסכינים",
-                     "price":  30,
-                     "images":  [
-                                    "177.jpg"
-                                ],
-                     "description":  "מגש לסכינים איקאה"
-                 },
-                 {
-                     "name":  "מגש כלי מטבח",
-                     "price":  20,
-                     "images":  [
-                                    "178.jpg"
-                                ],
-                     "description":  "מגש לכלי מטבח איקאה"
-                 },
-                 {
-                     "name":  "חותך סלט",
-                     "price":  30,
-                     "images":  [
-                                    "181.jpg"
-                                ],
-                     "description":  "חותך סלט"
                  },
                  {
                      "name":  "קעריות",
@@ -1772,35 +1607,11 @@
                  },
                  {
                      "name":  "כוסות",
-                     "price":  30,
-                     "images":  [
-                                    "216.jpg"
-                                ],
-                     "description":  "סט כוסות"
-                 },
-                 {
-                     "name":  "כוסות",
                      "price":  50,
                      "images":  [
                                     "217.jpg"
                                 ],
                      "description":  "סט כוסות"
-                 },
-                 {
-                     "name":  "סכום",
-                     "price":  30,
-                     "images":  [
-                                    "218.jpg"
-                                ],
-                     "description":  "סט סכום חדש"
-                 },
-                 {
-                     "name":  "קעריות",
-                     "price":  20,
-                     "images":  [
-                                    "219.jpg"
-                                ],
-                     "description":  "סט קעריות קטנות"
                  },
                  {
                      "name":  "כוסות",
@@ -1849,6 +1660,126 @@
                                     "226.jpg"
                                 ],
                      "description":  "סט כוסות"
+                 },
+                 {
+                     "name":  "משחיז סכינים",
+                     "price":  30,
+                     "images":  [
+                                    "248.jpg"
+                                ],
+                     "description":  "משחיז סכינים"
+                 },
+                 {
+                     "name":  "שקיות זילוף",
+                     "price":  10,
+                     "images":  [
+                                    "249.jpg"
+                                ],
+                     "description":  "שקיות זילוף"
+                 },
+                 {
+                     "name":  "סוטאז\u0027",
+                     "price":  20,
+                     "images":  [
+                                    "261.jpg"
+                                ],
+                     "description":  "סוטאז\u0027 26 ס\"מ"
+                 },
+                 {
+                     "name":  "מערוך",
+                     "price":  20,
+                     "images":  [
+                                    "262.jpg"
+                                ],
+                     "description":  "מערוך"
+                 },
+                 {
+                     "name":  "כלי אפיה",
+                     "price":  10,
+                     "images":  [
+                                    "263.jpg"
+                                ],
+                     "description":  "כלי אפיה. כל מוצר 10 שח"
+                 },
+                 {
+                     "name":  "צלחת הגשה",
+                     "price":  20,
+                     "images":  [
+                                    "264.jpg"
+                                ],
+                     "description":  "צלחת הגשה"
+                 },
+                 {
+                     "name":  "צלחת הגשה",
+                     "price":  20,
+                     "images":  [
+                                    "265.jpg"
+                                ],
+                     "description":  "צלחת הגשה"
+                 },
+                 {
+                     "name":  "סט לתנור",
+                     "price":  30,
+                     "images":  [
+                                    "266.jpg"
+                                ],
+                     "description":  "סט לתנור"
+                 },
+                 {
+                     "name":  "מגש לפיצה",
+                     "price":  20,
+                     "images":  [
+                                    "267.jpg"
+                                ],
+                     "description":  "מגש לפיצה"
+                 },
+                 {
+                     "name":  "כוסות",
+                     "price":  10,
+                     "images":  [
+                                    "269.jpg"
+                                ],
+                     "description":  "כוסות"
+                 },
+                 {
+                     "name":  "קערות",
+                     "price":  10,
+                     "images":  [
+                                    "271.jpg"
+                                ],
+                     "description":  "קערות נירוסטה"
+                 },
+                 {
+                     "name":  "קערות",
+                     "price":  20,
+                     "images":  [
+                                    "273.jpg"
+                                ],
+                     "description":  "קערות זכוכית"
+                 },
+                 {
+                     "name":  "קערות",
+                     "price":  20,
+                     "images":  [
+                                    "276.jpg"
+                                ],
+                     "description":  "קערות זכוכית"
+                 },
+                 {
+                     "name":  "קעריות",
+                     "price":  20,
+                     "images":  [
+                                    "278.jpg"
+                                ],
+                     "description":  "קעריות זכוכית"
+                 },
+                 {
+                     "name":  "כוסות",
+                     "price":  20,
+                     "images":  [
+                                    "281.jpg"
+                                ],
+                     "description":  "כוסות"
                  }
              ]
 }

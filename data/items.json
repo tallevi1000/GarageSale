@@ -917,20 +917,12 @@
                        "description":  "סט שולחנות מעץ לסלון"
                    },
                    {
-                       "name":  "ארונית",
-                       "price":  300,
-                       "images":  [
-                                      "6.jpg"
-                                  ],
-                       "description":  "ארונית איקאה 4 מגירות"
-                   },
-                   {
                        "name":  "מגירות",
                        "price":  300,
                        "images":  [
                                       "7.jpg"
                                   ],
-                       "description":  ""
+                       "description":  "ארונית איקאה 4 מגירות"
                    },
                    {
                        "name":  "מזנון ",

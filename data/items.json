@@ -195,14 +195,6 @@
                                 "description":  "בובה קטנה חדשה"
                             },
                             {
-                                "name":  "קש-קשים",
-                                "price":  20,
-                                "images":  [
-                                               "202.jpg"
-                                           ],
-                                "description":  "משחק קש-קשים חדש"
-                            },
-                            {
                                 "name":  "משחק",
                                 "price":  10,
                                 "images":  [
@@ -339,22 +331,6 @@
                                                "357.jpg"
                                            ],
                                 "description":  "משחק משוך בגזר"
-                            },
-                            {
-                                "name":  "משחק",
-                                "price":  20,
-                                "images":  [
-                                               "358.jpg"
-                                           ],
-                                "description":  "משחק פטריות"
-                            },
-                            {
-                                "name":  "משחק",
-                                "price":  20,
-                                "images":  [
-                                               "359.jpg"
-                                           ],
-                                "description":  "משחק אוניברסיטה לגן 1+2+3"
                             },
                             {
                                 "name":  "מכונית",
@@ -1325,14 +1301,6 @@
                                "description":  "כדור פזיו מידה 65 סמ"
                            },
                            {
-                               "name":  "אמבטיה לתינוק",
-                               "price":  50,
-                               "images":  [
-                                              "210.jpg"
-                                          ],
-                               "description":  "אמבטיה לתינוק"
-                           },
-                           {
                                "name":  "מגבונים לעיניים",
                                "price":  30,
                                "images":  [
@@ -1832,14 +1800,6 @@
                                     "266.jpg"
                                 ],
                      "description":  "סט לתנור"
-                 },
-                 {
-                     "name":  "כוסות",
-                     "price":  10,
-                     "images":  [
-                                    "269.jpg"
-                                ],
-                     "description":  "כוסות"
                  },
                  {
                      "name":  "קערות",
